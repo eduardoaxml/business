@@ -12,10 +12,15 @@ function App() {
   const handleSelect = (item: string) => {
     return item;
   };
+  const content = list.length ? (
+    <List data={list} onSelect={handleSelect} />
+  ) : (
+    <p>No items</p>
+  );
   return (
     <Card>
       <CardBody title="Hola Mundo" body="Este es un test" />
-      <List data={list} onSelect={handleSelect} />
+      {content}
     </Card>
   );
 }
