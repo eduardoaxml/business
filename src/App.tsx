@@ -9,10 +9,13 @@ function App() {
     "A fourth item",
     "And a fifth one",
   ];
+  const handleSelect = (item: string) => {
+    return item;
+  };
   return (
     <Card>
       <CardBody title="Hola Mundo" body="Este es un test" />
-      <List data={list} />
+      <List data={list} onSelect={handleSelect} />
     </Card>
   );
 }
