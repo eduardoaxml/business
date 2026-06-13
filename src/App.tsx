@@ -1,12 +1,13 @@
-// import Titulo from "./components/Titulo";
+import Card, { CardBody } from "./components/Card";
+import List from "./components/List";
 
 
 function App() {
-  const name = "World";
   return (
-    <div className="App">
-      <h1>Hello {name}</h1>
-    </div>
+    <Card>
+      <CardBody title="Hola Mundo" body="Este es un test" />
+      <List />
+    </Card>
   );
 }
 
