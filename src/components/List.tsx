@@ -12,7 +12,7 @@ const List = ({ data, onSelect }: Props) => {
     onSelect?.(item);
   };
   return (
-    <div>
+    <div className="p-2">
       <ul className="list-group">
         {data.map((item, i) => (
           <li
